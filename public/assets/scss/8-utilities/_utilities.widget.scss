@@ -1,0 +1,428 @@
+.cantain-login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 13.4375rem);
+    @media (max-width: 992px) {
+        min-height: calc(100vh - 12.1875rem);
+    }
+}
+
+.cantain-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 13.4375rem);
+    @media (max-width: 992px) {
+        min-height: calc(100vh - 12.1875rem);
+    }
+}
+
+// Icon for course
+.list-learn {
+    li {
+        &.list-complete {
+            background-color: #ffffff;
+            &::before {
+                content: "\f058";
+                font-weight: 900;
+                color: $primary;
+            }
+        }
+        &:hover {
+            background-color: $gray-100;
+        }
+        &.list-incomplete {
+            // background-color: $gray-100;
+            &::before {
+                content: "\f111";
+                font-weight: 300;
+                color: $gray-900;
+            }
+        }
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            content: "\f111";
+            font-size: size(24);
+            vertical-align: middle;
+            color: $gray-900;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.15rem;
+            @media (min-width: 768px) {
+                left: 1rem;
+            }
+        }
+        &.vdo {
+            a {
+                &::before {
+                    font-family: $prachason;
+                    content: "Video:";
+                    font-weight: 500;
+                    padding-right: size(5);
+                }
+                &.link-quiz {
+                    &::before {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        &.raeding {
+            a {
+                &::before {
+                    font-family: $prachason;
+                    content: "Reading:";
+                    font-weight: 500;
+                    padding-right: size(5);
+                }
+                &.link-quiz {
+                    &::before {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        &.quiz {
+            flex-direction: column;
+            align-items: flex-start;
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+            a {
+                &::before {
+                    font-family: $prachason;
+                    content: "Quiz:";
+                    font-weight: 500;
+                    padding-right: size(5);
+                }
+                &.link-quiz {
+                    &::before {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list-view {
+    li {
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            vertical-align: middle;
+            color: $gray-900;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.35rem;
+            // padding: 0.15rem 0.5rem;
+            border: 1px solid $gray-900;
+            border-radius: 50%;
+            width: 1.875rem;
+            height: 1.875rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (min-width: 768px) {
+                left: 1rem;
+                top: 0.75rem;
+                // padding: 0.15rem 0.5rem;
+            }
+        }
+        &.complete {
+            &::before {
+                font-family: "Font Awesome 5 Pro";
+                content: "\f058" !important;
+                font-weight: 900;
+                color: $primary;
+                font-size: size(30);
+                border: 0 !important;
+            }
+            &.quiz {
+                &::before {
+                    font-weight: 900;
+                }
+            }
+            &.raeding {
+                &::before {
+                    font-weight: 900;
+                }
+            }
+        }
+        &.vdo {
+            &::before {
+                font-weight: 900;
+                content: "\f04b";
+            }
+        }
+        &.raeding {
+            &::before {
+                font-weight: 400;
+                content: "\f518";
+            }
+        }
+        &.quiz {
+            &::before {
+                font-weight: 400;
+                content: "\f15c";
+            }
+        }
+    }
+}
+
+.row-list-detail {
+    .list {
+        &::before {
+            color: #dadada;
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: size(26);
+            vertical-align: middle;
+            font-family: "Font Awesome 5 Pro";
+        }
+        &.vdo {
+            &::before {
+                font-weight: 400;
+                content: "\f03d";
+            }
+        }
+        &.raeding {
+            &::before {
+                font-weight: 400;
+                content: "\f518";
+            }
+        }
+        &.quiz {
+            &::before {
+                font-weight: 400;
+                content: "\f15c";
+            }
+        }
+    }
+}
+
+.list-learn-grid {
+    li {
+        &.list-complete {
+            span {
+                &::before {
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: size(24);
+                    vertical-align: middle;
+                    content: "\f058";
+                    font-weight: 900;
+                    color: $primary;
+                    padding: 0 size(24);
+                }
+            }
+        }
+        &.list-incomplete {
+            span {
+                &::before {
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: size(24);
+                    vertical-align: middle;
+                    content: "\f111";
+                    font-weight: 300;
+                    color: $gray-300;
+                    padding: 0 size(24);
+                }
+            }
+        }
+        &.vdo {
+            a {
+                &::before {
+                    width: 4.375rem;
+                    text-align: right;
+                    font-family: $prachason;
+                    content: "Video:";
+                    font-weight: 500;
+                    padding-right: size(5);
+                }
+            }
+        }
+        &.raeding {
+            a {
+                &::before {
+                    width: 4.375rem;
+                    text-align: right;
+                    font-family: $prachason;
+                    content: "Raeding:";
+                    font-weight: 500;
+                    padding-right: size(5);
+                }
+            }
+        }
+        &.quiz {
+            a {
+                &::before {
+                    width: 4.375rem;
+                    text-align: right;
+                    font-family: $prachason;
+                    content: "Quiz:";
+                    font-weight: 500;
+                    padding-right: size(5);
+                }
+            }
+        }
+    }
+}
+.list-score {
+    margin: 0 !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $prachason;
+    li {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        vertical-align: middle;
+        margin-bottom: size(10);
+        position: relative;
+        padding-left: size(34);
+        &:first-child {
+            margin-bottom: 0;
+        }
+        .header {
+            font-size: size(16);
+            line-height: size(26);
+            font-weight: 500;
+            color: $gray-900;
+            margin-bottom: 0;
+            @media (min-width: 768px) {
+                font-size: size(18);
+                line-height: size(28);
+            }
+        }
+        span {
+            font-size: size(14);
+            line-height: size(24);
+            font-weight: 500;
+            color: $gray-900;
+            vertical-align: middle;
+            @media (min-width: 768px) {
+                font-size: size(16);
+                line-height: size(26);
+            }
+        }
+        small {
+            font-size: size(14);
+            line-height: size(24);
+            color: $gray-500;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &.complete {
+            &::before {
+                font-family: "Font Awesome 5 Pro";
+                font-size: size(24);
+                vertical-align: middle;
+                content: "\f058";
+                font-weight: 900;
+                color: $primary;
+            }
+        }
+        &.incomplete {
+            &::before {
+                font-family: "Font Awesome 5 Pro";
+                font-size: size(24);
+                vertical-align: middle;
+                content: "\f111";
+                font-weight: 300;
+                color: $gray-300;
+            }
+        }
+    }
+}
+.container-specker {
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+}
+.avatar-specker {
+    width: 6rem;
+    border-radius: size(8);
+    @media (min-width: 768px) {
+        width: 6.25rem;
+    }
+    picture,
+    img {
+        border-radius: size(8);
+    }
+}
+.header-specker {
+    font-size: size(16);
+    line-height: size(26);
+    color: $gray-900;
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        font-size: size(18);
+        line-height: size(28);
+    }
+}
+
+ul.custom {
+    margin: size(10) 0 !important;
+    padding: 0;
+    display: inline-block;
+    font-family: $prachason;
+    li {
+        list-style: none;
+        font-size: size(16);
+        line-height: size(26);
+        color: $gray-900;
+        padding: size(10) 0 0 size(20);
+        position: relative;
+        a {
+            color: $primary;
+            text-decoration: none !important;
+        }
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            content: "\f111";
+            color: $info;
+            padding-right: 0.9375rem;
+            font-size: size(8);
+            vertical-align: middle;
+            position: absolute;
+            left: 0;
+        }
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+ol.custom {
+    margin: size(10) 0 !important;
+    padding: 0 0 0 size(15);
+    display: inline-block;
+    font-family: $prachason;
+    a {
+        text-decoration: none !important;
+        li {
+            color: $primary;
+        }
+    }
+    li {
+        font-size: size(16);
+        line-height: size(26);
+        color: $gray-900;
+        padding: size(10) 0 0 size(5);
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

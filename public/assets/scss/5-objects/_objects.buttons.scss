@@ -1,0 +1,77 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+$btn-padding-y: size(8);
+$btn-padding-x: size(16);
+$btn-font-family: "Prachason";
+$btn-font-size: size(16);
+$btn-line-height: size(24);
+$btn-border-radius: size(8);
+$btn-font-weight: 400;
+.btn {
+    &:focus {
+        box-shadow: none !important;
+        border: 0.0625rem solid #000 !important;
+    }
+    &.font-18{
+        font-size: 1.125rem !important;
+        line-height: 1.6875rem !important;
+    }
+}
+.btn-info{
+    color: $secondary !important;
+    &:hover{
+        background: rgba(74, 215, 209, 0.8) !important;
+        border:1px solid rgba(74, 215, 209, 0) !important;
+    }
+}
+.btn-main{
+    color: $secondary !important;
+    background-color: rgba(74, 215, 209, 1) !important;
+    &:hover{
+        background: rgba(74, 215, 209, 0.8) !important;
+        border:1px solid rgba(74, 215, 209, 0) !important;
+    }
+}
+.icon-right {
+    i {
+        padding-left: size(10);
+    }
+}
+
+.icon-left {
+    i {
+        padding-right: size(10);
+    }
+}
+
+.i-transform {
+    i {
+        &::before {
+            -webkit-transition: transform 0.3s ease-out;
+            -moz-transition: transform 0.3s ease-out;
+            -ms-transition: transform 0.3s ease-out;
+            -o-transition: transform 0.3s ease-out;
+            transition: transform 0.3s ease-out;
+        }
+    }
+}
+.i-transform {
+    &:hover {
+        i {
+            &::before {
+                -webkit-transform: translateX(4px);
+                -moz-transform: translateX(4px);
+                -ms-transform: translateX(4px);
+                -o-transform: translateX(4px);
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+.btn-link{
+    border: 0 !important;
+    &:focus{
+        border: 0 !important;
+    }
+}

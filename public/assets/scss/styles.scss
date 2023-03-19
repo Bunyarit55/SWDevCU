@@ -1,0 +1,45 @@
+/* ==========================================================================
+Tokio marine CSS
+   ========================================================================== */
+
+// 0-VARIABLE
+@import "0-variable/variable.color";
+@import "0-variable/variable.typography";
+// 1-VENDORS
+@import "1-vendors/vendors.swiper";
+// 2-TOOLS
+@import "2-tools/tools.functions";
+// 3-GENERIC
+// 4-ELEMENTS
+@import "4-elements/elements.document";
+@import "4-elements/elements.media";
+// 5-OBJECTS
+@import "5-objects/objects.buttons";
+// 6-COMPONENTS
+@import "6-components/components.navbar";
+@import "6-components/components.footer";
+@import "6-components/components.form";
+@import "6-components/components.card";
+@import "6-components/components.accordion";
+@import "6-components/components.dropdowns";
+@import "6-components/components.pagination";
+@import "6-components/components.breadcrumb";
+@import "6-components/components.modal";
+// 7-THEMES
+@import "7-themes/themes.login";
+@import "7-themes/themes.home";
+@import "7-themes/themes.course";
+@import "7-themes/themes.checkout";
+@import "7-themes/themes.transfer";
+@import "7-themes/themes.training";
+@import "7-themes/themes.quiz";
+// 8-UTILITIES
+@import "8-utilities/utilities.typography";
+@import "8-utilities/utilities.color";
+@import "8-utilities/utilities.widget";
+@import "8-utilities/utilities.helper";
+// 9-CHECK
+@import "9-check/check.ratio";
+@import "9-check/check.checkbox";
+//Bootstrap 5
+@import "../../bootstrap-5/scss/bootstrap.scss";

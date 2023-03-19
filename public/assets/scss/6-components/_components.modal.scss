@@ -1,0 +1,107 @@
+// Modal
+.cm-modal{
+    .modal-content{
+        border:0;
+        border-radius: size(8);
+    }
+    .modal-header{
+        border-bottom: 1px solid $gray-100;
+    }
+    .modal-title{
+        color: $primary;
+    }
+    .modal-footer{
+        border-top: 1px solid $gray-100;
+    }
+}
+.foot-between{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    button,a{
+        width: 48.3333%;
+        padding: 0.5rem !important;
+        font-size: size(13) !important;
+        @media (min-width: 768px) {
+            font-size: size(16) !important;
+        }
+    }
+}
+.foot-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-exam{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 1.5%;
+    .row-exam{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: size(20);
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: size(15);
+            h5{
+                word-break: break-word;
+                font-size: size(16);
+                font-weight: 500;
+                color: $gray-900;
+                margin-bottom: 0;
+            }
+            span{
+                font-size: size(14);
+                font-weight: 400;
+                color: $gray-900; 
+                padding-left: size(10);
+                margin-bottom: 0;
+            }
+        }
+        .number{
+            // display: flex;
+            // flex-wrap: wrap;
+            // gap: 1.5%;
+            .item{
+                min-width:size(32);
+                min-height: size(32);
+                max-width: size(32);
+                max-height: size(32);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                text-decoration: none;
+                font-size: size(14);
+                background-color: #ffffff;
+                border: 1px solid #A2A2A2;
+                color: $gray-900;
+                padding: 0 !important;
+                &.complete{
+                    background-color: $gray-500;
+                    border: 1px solid $gray-500;
+                    color: #ffffff;
+                    &:hover{
+                        background-color: $gray-500;
+                    }
+                }
+                &:hover{
+                    background-color: $gray-100;
+                }
+            }
+        }
+    }
+
+    // &::after{
+    //     content: '';
+    //     flex: auto;
+    // }
+}

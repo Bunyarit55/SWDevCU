@@ -1,0 +1,75 @@
+// breadcrumb
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-padding-y: 0.75rem;
+$breadcrumb-font-size: 1rem;
+$breadcrumb-divider-color: $gray-900 !important;
+$breadcrumb-active-color: $gray-900;
+.breadcrumb {
+    font-family: $prachason;
+}
+.breadcrumb-item {
+    a {
+        color: $gray-900 !important;
+        text-decoration: none !important;
+    }
+}
+.breadcrumb-item + .breadcrumb-item {
+    &::before {
+        font-family: "Font Awesome 5 Pro" !important;
+        font-weight: 400 !important;
+        content: "\f054" !important;
+    }
+}
+.nav-next-page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: $prachason;
+    li {
+        list-style: none;
+        padding: 0 1rem;
+        font-weight: 500;
+        &.prev {
+            padding-left: 0;
+            @media (min-width: 768px) {
+                padding-right: 1rem; 
+            }
+            &::before {
+                font-family: "Font Awesome 5 Pro" !important;
+                font-weight: 400 !important;
+                content: "\f053" !important;
+                padding-right: size(15);
+                color: $primary;
+            }
+        }
+        &.next {
+            padding-right: 1rem;
+            @media (min-width: 768px) {
+                padding-right: 0; 
+            }
+            &::after {
+                font-family: "Font Awesome 5 Pro" !important;
+                font-weight: 400 !important;
+                content: "\f054" !important;
+                padding-left: size(15);
+                color: $primary;
+            }
+        }
+        a {
+            text-decoration: none !important;
+        }
+    }
+}
+
+.flex-nav-next {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

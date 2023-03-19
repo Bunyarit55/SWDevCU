@@ -1,0 +1,55 @@
+@use "sass:map";
+$font-size: (
+    "10": .625rem,
+    "12": 0.75rem,
+    "13": 0.8125rem,
+    "14": 0.875rem,
+    "16": 1rem,
+    "18": 1.125rem,
+    "20": 1.25rem,
+    "22": 1.375rem,
+    "24": 1.5rem,
+    "26": 1.625rem,
+    "28": 1.75rem,
+    "30": 1.875rem,
+    "32": 2rem,
+    "34": 2.125rem,
+    "36": 2.25rem,
+    "38": 2.375rem,
+    "40": 2.5rem,
+);
+@each $class, $values, $line in $font-size {
+    .font-#{$class} {
+        font-size: $values !important;
+        line-height: calc(#{$values} + .625rem);
+    }
+}
+
+.heading-40 {
+    font-family: "Prachason";
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+$heading: (
+    "36": 2.25rem,
+    "30": 1.875rem,
+    "24": 1.5rem,
+    "20": 1.25rem,
+);
+@each $class, $values in $heading {
+    .heading-#{$class} {
+        font-family: "Prachason";
+        font-size: $values !important;
+        font-weight: 400;
+    }
+}
+$weight: (
+    "300": 300,
+    "400": 400,
+    "500": 500,
+);
+@each $class, $values in $weight {
+    .weight-#{$class} {
+        font-weight: $values !important;
+    }
+}

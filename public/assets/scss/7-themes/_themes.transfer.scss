@@ -1,0 +1,80 @@
+//Transfer
+
+.header-transfer {
+    font-size: size(18);
+    line-height: size(28);
+    font-weight: 500;
+    margin: size(20) 0 !important;
+    color: $gray-900;
+    @media (min-width: 768px) {
+        font-size: size(36);
+        line-height: size(46);
+        margin: size(40) 0 !important;
+    }
+}
+
+.box-checkout-full {
+    font-family: $prachason;
+    padding: size(24);
+    border-radius: size(8);
+    background-color: #ffffff;
+    border: 1px solid #dededd;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+.text-upload {
+    cursor: pointer;
+    padding: 0.4rem 1.3rem!important;
+    left: 0.8rem;
+    top: 0.2rem;
+    font-weight: 500 !important;
+    border-radius: size(8) !important;
+    position: absolute;
+    color: $gray-500 !important;
+}
+.header-confirm {
+    font-size: size(16);
+    line-height: size(16);
+    font-weight: 500;
+    color: $gray-900;
+    @media (min-width: 768px) {
+        font-size: size(30);
+        line-height: size(40);
+    }
+}
+.flex-list-bill{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.box-img-bill{
+    width: 9.375rem;
+}
+.box-detail-bill{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: size(5);
+    @media (min-width: 768px) {
+        width: calc(100% - 8.4375rem);
+        padding-left: size(15);
+        margin-top: 0;
+    }
+    .col-text-detail{
+        display: inline-block;
+        width: 70%;
+    }
+    .col-price{
+        display: inline-block;
+        text-align: right;
+        width: 30%;
+    }
+}

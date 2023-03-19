@@ -1,0 +1,85 @@
+//Footer
+.footer-public {
+    font-family: "Prachason";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: size(15) 0;
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        @media (max-width: 576px) {
+            margin-top: size(10);
+        }
+        .foot-link {
+            list-style: none;
+            display: inline-block;
+            padding: 0 size(10);
+            font-size: size(24);
+            a {
+                color: $info !important;
+            }
+            &:last-child {
+                padding-right: 0;
+                @media (max-width: 576px) {
+                    padding-right: size(10);
+                }
+            }
+        }
+    }
+}
+
+.footer-login {
+    font-family: "Prachason";
+    padding: size(72) 0;
+    // width: 100%;
+    @media (max-width: 1399.98px) {
+        margin: 0 -0.75rem;
+        width: 100vw;
+    }
+    @media (max-width: 992px) {
+        padding: size(22) 0 size(20) 0;
+    }
+    .head-brand {
+        height: 1.5rem;
+        width: auto;
+        padding: 0;
+    }
+    .head-foot {
+        font-weight: 300;
+        font-size: size(20);
+        line-height: size(30);
+        color: #ffffff;
+        margin-bottom: size(10);
+        margin-top: 0;
+        @media (max-width: 992px) {
+            margin-bottom: size(5);
+            margin-top: size(20);
+        }
+    }
+    .p-foot{
+        font-weight: 300;
+        font-size: size(16);
+        line-height: size(26);
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    .foot-link{
+        font-weight: 300;
+        font-size: size(16);
+        line-height: size(26);
+        margin-bottom: 0;
+        color: #ffffff !important; 
+        text-decoration: none !important;
+        &:hover{
+            color: $info !important;
+        }
+    }
+}

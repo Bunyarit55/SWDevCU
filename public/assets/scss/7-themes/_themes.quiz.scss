@@ -1,0 +1,311 @@
+.section-quiz {
+    padding-top: size(147);
+    @media (min-width: 768px) {
+        padding-top: size(126);
+    }
+}
+
+.section-survey {
+    padding-top: size(72);
+}
+
+.exam-content {
+    font-family: $prachason;
+    .header-set {
+        font-size: size(24);
+        color: $gray-900;
+        font-weight: 500;
+    }
+    .title-score {
+        font-size: size(16);
+        line-height: size(26);
+        color: $gray-900;
+    }
+    .head-exem {
+        font-size: size(16);
+        line-height: size(26);
+        font-weight: 500;
+        color: $gray-900;
+        margin-bottom: 0;
+    }
+    .badge-gray {
+        background-color: $gray-200;
+        color: $gray-900;
+        font-size: size(14) !important;
+        padding: size(3) size(3) !important;
+        @media (min-width: 768px) {
+            font-size: size(16) !important;
+        }
+    }
+    .list-exam {
+        border-bottom: 1px solid #dededd;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+.content-survey {
+    font-family: $prachason;
+    margin-bottom: 2.5rem;
+    @media (min-width: 768px) {
+        margin-bottom: 3.75rem;
+    }
+    .head-survey {
+        font-size: size(18);
+        line-height: size(28);
+        font-weight: 500;
+        color: $gray-900;
+        margin-bottom: 0;
+
+        @media (min-width: 768px) {
+            font-size: size(20);
+            line-height: size(30);
+        }
+    }
+}
+.list-survey {
+    border-bottom: 1px solid #dededd;
+}
+.foot-exam {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: size(20) 0 size(45) 0;
+    .btn-outline-primary {
+        color: $gray-900 !important;
+        &:hover {
+            color: #ffffff !important;
+        }
+    }
+}
+
+.top-answers {
+    display: flex;
+    flex-direction: row;
+    font-family: $prachason;
+    padding: size(20);
+    background-color: $gray-100;
+    margin-bottom: size(20);
+    @media (min-width: 768px) {
+        padding: size(20) size(40);
+        margin-bottom: size(40);
+    }
+    .item-content {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 26px);
+        align-items: flex-start;
+        justify-content: flex-start;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.list-exam {
+    .box-answers {
+        width: calc(100% - 1.5rem);
+        margin-left: 0.75rem;
+        padding: size(20);
+        font-family: $prachason;
+        border-radius: size(8);
+        .text-span {
+            font-size: size(16);
+            line-height: size(26);
+        }
+        .text-content {
+            word-wrap: break-word;
+            font-size: size(16);
+            line-height: size(26);
+            margin-top: size(10);
+            margin-bottom: 0;
+            padding-left: size(24);
+        }
+    }
+    .subjective {
+        .text-area {
+            color: $gray-900;
+            font-size: size(16);
+            line-height: size(26);
+            margin-bottom: size(20);
+        }
+        &.box-answers {
+            background-color: rgba($color: $yellow, $alpha: 0.2);
+            .text-span {
+                color: $primary;
+                &::before {
+                    padding-right: size(10);
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 300;
+                    content: "\f303";
+                    color: $primary;
+                }
+            }
+            .text-content {
+                color: $gray-900;
+            }
+        }
+    }
+    .correct {
+        &.box-answers {
+            background-color: rgba($color: #7fe4e0, $alpha: 0.2);
+            .text-span {
+                color: $primary;
+                &::before {
+                    padding-right: size(10);
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 300;
+                    content: "\f058";
+                    color: $primary;
+                }
+            }
+            .text-content {
+                color: $gray-900;
+            }
+        }
+    }
+
+    .incorrect {
+        &.box-answers {
+            background-color: rgba($color: #fe4a49, $alpha: 0.2);
+            .text-span {
+                color: $danger;
+                &::before {
+                    padding-right: size(10);
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 300;
+                    content: "\f057";
+                    color: $danger;
+                }
+            }
+            .text-content {
+                color: $gray-900;
+            }
+        }
+    }
+}
+.label-bottom {
+    font-family: $prachason;
+    font-size: size(15);
+    line-height: size(25);
+    font-weight: 400;
+    color: $gray-900;
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        font-size: size(16);
+        line-height: size(26);
+    }
+}
+
+.head-list-survey {
+    justify-content: flex-end;
+    padding: 0;
+    @media (min-width: 768px) {
+        padding: 0 0.625rem;
+    }
+    label.head {
+        font-family: $prachason;
+        font-size: size(15);
+        line-height: size(25);
+        font-weight: 400;
+        color: $gray-900;
+        margin-bottom: 0;
+        text-align: center;
+        @media (min-width: 768px) {
+            font-size: size(16);
+            line-height: size(26);
+            text-align: left;
+        }
+    }
+}
+.row-survey {
+    background: #f3fafa;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0.9375rem 0;
+    margin-top: 1.25rem !important;
+    &:first-child {
+        margin-top: 0 !important;
+    }
+    @media (min-width: 768px) {
+        padding: 1.5rem 0.625rem;
+    }
+    .list {
+        font-family: $prachason;
+        font-size: size(15);
+        line-height: size(25);
+        font-weight: 400;
+        color: $gray-900;
+        margin-bottom: 0;
+        padding: 0 0.9375rem;
+        @media (min-width: 768px) {
+            font-size: size(16);
+            line-height: size(26);
+            padding: 0;
+        }
+    }
+}
+
+.cm-toast {
+    &.show {
+        opacity: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1060;
+        height: 100% !important;
+        width: 100% !important;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        outline: 0;
+        border-radius: 0 !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        .box-toast {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3.5rem;
+            width: calc(100% - 0.9375rem);
+            border-radius: 0.5rem;
+            background-color: #ffffff;
+            padding: 2.5rem 1rem;
+            @media (min-width: 576px) {
+                width: 500px;
+            }
+            .icon-toast {
+                font-size: size(60);
+                line-height: size(60);
+                color: $primary;
+                margin-bottom: size(20);
+                @media (min-width: 576px) {
+                    font-size: size(80);
+                    line-height: size(80);
+                }
+            }
+            label.head {
+                font-family: $prachason;
+                font-size: size(18);
+                line-height: size(28);
+                font-weight: 400;
+                color: $gray-900;
+                margin-bottom: 0;
+                text-align: center;
+                @media (min-width: 576px) {
+                    font-size: size(20);
+                    line-height: size(30);
+                }
+            }
+        }
+    }
+}

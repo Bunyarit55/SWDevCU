@@ -1,0 +1,117 @@
+// Forms
+
+$border-radius: 0.5rem;
+$input-border-color: $gray-300;
+$input-placeholder-color: $gray-500;
+$input-color: $gray-900;
+$input-border-radius: 0.5rem;
+$input-padding-y: 0.75rem;
+$input-padding-x: 0.875rem;
+$form-select-padding-y-sm: 0.625rem;
+$form-select-padding-x-sm: 0.625rem;
+$form-select-font-size-sm: 1rem;
+$input-focus-border-color: #007d76;
+$input-font-family: "Prachason";
+$input-font-size: 1rem;
+$input-font-weight: 400;
+
+.form-control {
+    line-height: 1.625rem !important;
+    &:focus {
+        box-shadow: none !important;
+        border: 1px solid #717171 !important;
+    }
+    &.payment {
+        border: 0.0625rem solid #aebcca;
+    }
+    &.gray {
+        border: 0.0625rem solid #D4D9DE;
+    }
+    &.credit {
+        border: 0.0625rem solid #dededd;
+    }
+    &[type="file"]{
+        border-color:transparent;
+        &:focus{
+            border-color:transparent !important;
+        }
+    }
+}
+[type="file"] {
+    /* Style the color of the message that says 'No file chosen' */
+    color: $gray-500 !important;
+    padding: 0.5rem 1rem !important;
+}
+[type="file"]::-webkit-file-upload-button {
+    background: $gray-200 !important;
+    border-radius: size(8) !important;
+    padding: 0.5rem 1rem !important;
+    color: $gray-200 !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    font-size: 1rem !important;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.form-select {
+    line-height: 1.625rem !important;
+    background-size: 1rem 5rem !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+    &.payment {
+        border: 0.0625rem solid #aebcca;
+    }
+    &.credit {
+        border: 0.0625rem solid #dededd;
+    }
+}
+.form-label {
+    font-weight: 500;
+    font-size: size(16);
+    line-height: size(22);
+    color: $gray-900;
+    span {
+        color: $danger;
+    }
+}
+.form-shadow {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+.input-btn-right {
+    position: relative;
+    .btn-see {
+        position: absolute;
+        right: 0;
+        top: 0.25rem;
+        z-index: 100;
+        color: #dadada !important;
+        &:focus {
+            box-shadow: none !important;
+            border: 1px solid transparent !important;
+            color: #222221 !important;
+        }
+    }
+    .form-control {
+        padding-right: calc(1.5em + 1.5rem) !important;
+    }
+    .form-control:invalid {
+        background-image: none !important;
+    }
+    .form-control:valid {
+        background-image: none !important;
+    }
+}
+.form-control{
+    &.otp{
+        &:invalid{
+            background-image: none !important;
+        }
+        &:valid {
+            background-image: none !important;
+        }
+    }
+}

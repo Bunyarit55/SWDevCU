@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #DOCUMENT
+   ========================================================================== */
+html {
+	min-height: 100%;
+	overflow-y: scroll;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+	color: #000;
+	font-weight: normal;
+}
+a {
+	cursor: pointer;
+}
+
+@each $heading in h1, h2, h3, h4, h5, h6{
+	#{$heading} {
+		font-family: 'Prachason';
+	}
+}
+section{
+	display: inline-block;
+	width: 100%;
+}

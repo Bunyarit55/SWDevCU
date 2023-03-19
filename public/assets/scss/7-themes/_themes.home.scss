@@ -1,0 +1,341 @@
+.banner-home {
+    .swiper-slide{
+        padding-bottom: 3.75rem;
+        @media (max-width: 992px) {
+            padding-bottom: 2.5rem;
+        }
+        @media (max-width: 576px) {
+            padding-bottom: .625rem;
+        }
+        
+    }
+}
+.banner-home {
+    .box-text {
+        position: absolute;
+        top: 25%;
+        left: 3.75rem;
+        z-index: 50;
+        width: 35%;
+        height: 75%;
+        background: #001730;
+        border-radius: 20px 120px 20px 20px;
+        padding: 1.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: 992px) {
+            top: 10%;
+            height: 90%;
+            width: 40%;
+        }
+        @media (max-width: 768px) {
+            left: 2.5rem;
+            padding: 1.25rem;
+        }
+        @media (max-width: 576px) {
+            top: 5%;
+            height: 95%;
+            left: 0.625rem;
+            border-radius: 20px 76px 20px 20px;
+            padding: 0.875rem 1.1875rem;
+            width: 50%;
+        }
+        .heading {
+            font-size: 2.5rem;
+            line-height: 3.75rem;
+            font-weight: 500;
+            color: #ffffff;
+            @media (max-width: 1200px) {
+                font-size: 2.1875rem;
+                line-height: 3.4375rem;
+            }
+            @media (max-width: 992px) {
+                font-size: 1.875rem;
+                line-height: 2.5rem;
+            }
+            @media (max-width: 768px) {
+                font-size: 1.75rem;
+                line-height: 2.375rem;
+            }
+            @media (max-width: 576px) {
+                font-size: 1rem;
+                line-height: 1.625rem;
+                margin-bottom: 0;
+            }
+        }
+        .title {
+            font-family: "Prachason";
+            font-size: 1.5rem;
+            line-height: 2.75rem;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 0.625rem;
+            @media (max-width: 992px) {
+                font-size: 1.125rem;
+                line-height: 2.8125rem;
+            }
+            @media (max-width: 576px) {
+                font-size: 0.625rem !important;
+                line-height: 1.125rem !important;
+            }
+        }
+        button,
+        a {
+            width: max-content;
+            @media (max-width: 576px) {
+                padding: 0.1875rem 0.625rem !important;
+                font-size: 0.75rem !important;
+                line-height: 1.375rem !important;
+            }
+        }
+    }
+}
+.section-partner {
+    display: inline-block;
+    width: 100%;
+    margin: size(40) 0;
+    @media (max-width: 576px) {
+        margin: size(30) 0 0 0;
+    }
+}
+.horizontal-scroll {
+    padding: 0.3125rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    scrollbar-color: transparent transparent;
+    @media (max-width: 719px) {
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.25rem;
+        // padding: 0;
+    }
+    .box-partner {
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+        @media (max-width: 992px) {
+            width: 9.375rem;
+        }
+        @media (max-width: 719px) {
+            width: 8rem;
+        }
+        .box-img {
+            width: 12.5rem;
+            height: 7.5rem;
+            padding: 0 0.9375rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.9375rem;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: size(8);
+            img {
+                height: 60%;
+                @media (max-width: 719px) {
+                    height: 50%;
+                }
+            }
+            @media (max-width: 992px) {
+                width: 9.375rem;
+            }
+            @media (max-width: 719px) {
+                width: 8rem;
+                height: 5.5rem;
+            }
+        }
+    }
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+.section-recommend {
+    margin: size(20) 0;
+    @media (max-width: 576px) {
+        margin: size(15) 0;
+    }
+    .wrap-slide {
+        padding: size(20) 0;
+    }
+}
+
+.section-latest {
+    margin: size(20) 0 size(40) 0;
+    @media (max-width: 576px) {
+        margin: size(15) 0 size(30) 0;
+    }
+    .wrap-slide {
+        padding: size(20) 0;
+    }
+}
+.section-about {
+    padding: 5.375rem 0;
+    @media (max-width: 1440px) {
+        padding: 2.5rem 3.75rem;
+    }
+    @media (max-width: 576px) {
+        padding: 2.75rem 2.5rem;
+    }
+}
+.section-col-gap {
+    padding-top: 5.375rem;
+    padding-bottom: 5.375rem;
+    @media (max-width: 1440px) {
+        padding-top: 5.375rem;
+        padding-bottom: 5.375rem;
+    }
+    @media (max-width: 576px) {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+}
+.section-col-lg-gap {
+    padding-top: 8.5625rem;
+    padding-bottom: 8.5625rem;
+    @media (max-width: 1440px) {
+        padding-top: 8.5625rem;
+        padding-bottom: 8.5625rem;
+    }
+    @media (max-width: 992px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    @media (max-width: 576px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+.heading-about {
+    font-weight: bold;
+    font-size: size(32);
+    line-height: size(48);
+    color: #ffffff;
+    @media (max-width: 576px) {
+        font-size: size(30);
+        line-height: size(46);
+        text-align: center;
+    }
+}
+.foot-about {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.9375rem;
+    @media (max-width: 576px) {
+        justify-content: center;
+    }
+}
+.title-about {
+    font-weight: bold;
+    font-size: size(20);
+    line-height: size(24);
+    color: $info;
+    @media (max-width: 576px) {
+        font-weight: normal;
+        text-align: center;
+    }
+}
+.p-about {
+    font-family: $prachason;
+    font-size: size(18);
+    line-height: size(28);
+    color: #ffffff;
+    margin-bottom: 0;
+    @media (max-width: 576px) {
+        font-size: size(16);
+        line-height: size(26);
+        text-align: center;
+    }
+}
+.list-about {
+    margin: size(10) 0;
+    li {
+        list-style: none;
+        font-family: $prachason;
+        font-weight: 300;
+        font-size: size(16);
+        line-height: size(26);
+        padding: size(2);
+        color: #ffffff;
+        position: relative;
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            content: "\f111";
+            color: $info;
+            padding-right: 0.9375rem;
+            font-size: 0.3125rem;
+            vertical-align: middle;
+        }
+    }
+}
+.heading-col-gap {
+    font-size: size(30);
+    line-height: size(30);
+    margin-bottom: size(42);
+    color: #000000;
+    text-align: center;
+    @media (max-width: 576px) {
+        font-size: size(24);
+        line-height: size(34);
+        margin-bottom: size(16);
+        text-align: left;
+    }
+}
+
+.heading-box-search {
+    font-size: size(24);
+    line-height: size(36);
+    font-weight: 500;
+    color: #343b43;
+    text-align: left;
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+    @media (max-width: 576px) {
+        font-size: size(18);
+        line-height: size(28);
+    }
+}
+.titel-search {
+    font-size: size(16);
+    line-height: size(26);
+    font-weight: 300;
+    color: #343b43;
+    text-align: left;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 100%;
+    font-family: $prachason;
+    @media (max-width: 992px) {
+        text-align: center;
+        margin-bottom: size(20);
+    }
+}

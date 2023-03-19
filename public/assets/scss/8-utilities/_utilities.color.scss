@@ -1,0 +1,28 @@
+@use "sass:map";
+$text-color: (
+    "gray-200": #dededd,
+    "gray-300": #a2a2a2,
+    "gray-500": #717171,
+    "gray-900": #222221,
+    "gray-757": #757575,
+    "gray-444": #444444,
+    "gray-c4": #C4C4C4,
+    "yellow": #ed9f2d,
+    "blue": #1839a9,
+    "black": #000000,
+    "black-333": #333333,
+    "black-800": #343b43,
+    "primary-brand": #007d76,
+    "main": #4ad7d1,
+    "facebook": #1877f2,
+    "ios": #000000,
+);
+@each $class, $values in $text-color {
+    .text-#{$class} {
+        color: $values !important;
+    }
+}
+
+.bg-light-gray {
+    background-color: #f0f2f2;
+}

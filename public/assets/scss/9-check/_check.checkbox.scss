@@ -1,0 +1,179 @@
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 2.1875rem;
+  margin-bottom: 0.9375rem;
+  cursor: pointer;
+  font-family: "Prachason";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border:1px solid $gray-500;
+}
+
+/* Create a custom checkbox */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border:1px solid $gray-500;
+  border-radius: .25rem;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .check {
+  background-color: #fff;
+  border:1px solid $gray-500;
+  border-radius: .25rem;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .check {
+  background-color: $info;
+  border:1px solid $info;
+  border-radius: .25rem;
+}
+
+/* Create the check/indicator (hidden when not checked) */
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the check when checked */
+.container-check input:checked ~ .check:after {
+  display: block;
+}
+
+/* Style the check/indicator */
+.container-check .check:after {
+    top: -0.15625rem;
+    left: 0.15625rem;
+    font-size: 1.125rem;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f00c";
+    color: #fff;
+}
+
+.correct {
+  .exam-check input:checked ~ .check {
+      background-color: #fff;
+      border: 1px solid $primary;
+      border-radius: 0.25rem;
+  }
+  .exam-check .check:after {
+      color: $primary;
+  }
+  .exam-check input:checked ~ .label-exam {
+      color: $primary;
+  }
+}
+
+.incorrect {
+  .exam-check input:checked ~ .check {
+      background-color: #fff;
+      border: 1px solid $danger;
+      border-radius: 0.25rem;
+  }
+  .exam-check .check:after {
+      color: $danger;
+  }
+  .exam-check input:checked ~ .label-exam {
+      color: $danger;
+  }
+}
+
+.exam-check {
+  max-width: 100%;
+  width: max-content;
+  display: block;
+  position: relative;
+  padding-left: size(30);
+  margin-bottom: size(24);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .check {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border:1px solid $gray-900;
+    border-radius: .25rem;
+  }
+  .check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+}
+.label-exam{
+  font-family: "Prachason";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: $gray-900;
+}
+.exam-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border:1px solid $gray-900;
+}
+
+
+.exam-check:hover input ~ .check {
+  background-color: #fff;
+  border:1px solid $gray-900;
+  border-radius: .25rem;
+}
+
+.exam-check input:checked ~ .check {
+  background-color:#fff;
+  border:1px solid $gray-900;
+  border-radius: .25rem;
+}
+
+
+.exam-check input:checked ~ .check:after {
+  display: block;
+}
+
+.exam-check .check:after {
+    top: .1875rem;
+    left: .25rem;
+    font-size: .75rem;
+    line-height: .75rem;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f00d";
+    color: $gray-900;
+}
+
