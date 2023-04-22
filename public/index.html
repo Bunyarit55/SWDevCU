@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="th" class="">
 
@@ -27,8 +28,6 @@
         src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
     <script
         src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
-        <!-- Load font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -42,31 +41,11 @@
         <div class="menu-inner">
 
             <ul>
-                <li>Menu Item</li>
-                <li>Menu Item</li>
-                <li>Menu Item</li>
-                <li>Menu Item</li>
-                <li>Menu Item</li>
-                <li>Menu Item</li>
+                <li>Sales</li>
+                <li>Purchase</li>
+                <li>Inventory</li>
+                <li>Accounting</li>
             </ul>
-            <a href="#home">Home</a>
-            <div class="subnav">
-                <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="#company">Company</a>
-                    <a href="#team">Team</a>
-                    <a href="#careers">Careers</a>
-                </div>
-            </div>
-
-            <div class="subnav">
-                <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="#bring">Bring</a>
-                    <a href="#deliver">Deliver</a>
-                    <a href="#package">Package</a>
-                    <a href="#express">Express</a>
-                </div>
         </div>
 
 
@@ -81,8 +60,8 @@
 
     
 
-    <div class="container">
-        <!-- <div class="Top">
+    <!-- <div class="container">
+        <div class="Top">
             <h3> hover close to the menu </h2>
         </div>
         <div class="body">
@@ -90,8 +69,8 @@
         </div>
         <div class="footer">
             <h3> hover close to the menu </h2>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 
     <!--Main Navigation-->
     <header>
@@ -101,18 +80,56 @@
 
 
         <!-- Background image -->
-        <div id="intro" class="bg-image shadow-2-strong">
+        <!-- <div id="intro" class="bg-image shadow-2-strong">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
                 <div class="container d-flex align-items-center justify-content-center text-center h-100">
-
+                    <img src="./assets/img/index.jpg" style="background-size: 100% 100%;">
                 </div>
             </div>
         </div>
-        </div>
+        </div> -->
         <!-- Background image -->
     </header>
     <!--Main Navigation-->
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
